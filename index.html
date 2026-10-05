@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Glassify Shop - Premium glassmorphism e-commerce experience.">
+  <title>Glassify Shop | Premium E-Commerce</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animations.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="cursor-glow"></div>
+
+  <header class="site-header glass">
+    <a class="logo" href="index.html"><span>G</span>lassify</a>
+    <nav class="desktop-nav">
+      <a class="active" href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">◐</button>
+      <a class="cart-pill" href="cart.html">Cart <b id="cartCount">0</b></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <div class="mobile-menu glass" id="mobileMenu">
+    <a href="index.html">Home</a><a href="shop.html">Shop</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+  </div>
+
+  <main>
+    <section class="hero section">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span></span> NEW SEASON 2026</div>
+        <h1>Shop the future.<br><em>Feel the glass.</em></h1>
+        <p>Discover curated products wrapped in a premium shopping experience designed to look as good as the things you love.</p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary magnetic" href="shop.html">Explore Collection <span>↗</span></a>
+          <a class="btn btn-ghost" href="#featured">View Featured</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>12K+</strong><small>Happy shoppers</small></div>
+          <div><strong>4.9/5</strong><small>Average rating</small></div>
+          <div><strong>24h</strong><small>Fast dispatch</small></div>
+        </div>
+      </div>
+      <div class="hero-visual reveal delay-2">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="hero-product glass">
+          <span class="floating-tag">TRENDING</span>
+          <div class="product-art art-headphones">◖◗</div>
+          <div class="hero-product-info"><small>Premium Audio</small><h3>Nova Headphones</h3><b>$129</b></div>
+          <button class="round-add" data-add="Nova Headphones" data-price="129">+</button>
+        </div>
+        <div class="mini-card glass"><span>✦</span><div><b>Editor's Pick</b><small>Designed for you</small></div></div>
+      </div>
+    </section>
+
+    <section class="section" id="featured">
+      <div class="section-heading reveal">
+        <div><span class="eyebrow">CURATED FOR YOU</span><h2>Featured <em>products</em></h2></div>
+        <a class="text-link" href="shop.html">View all →</a>
+      </div>
+      <div class="product-grid">
+        <article class="product-card glass reveal">
+          <button class="heart" aria-label="Wishlist">♡</button><div class="product-art art-watch">◉</div>
+          <div class="product-meta"><span>Accessories</span><h3>Orbit Watch</h3><div><b>$89</b><button class="add-btn" data-add="Orbit Watch" data-price="89">Add to cart +</button></div></div>
+        </article>
+        <article class="product-card glass reveal delay-1">
+          <button class="heart" aria-label="Wishlist">♡</button><div class="product-art art-shoe">◢</div>
+          <div class="product-meta"><span>Streetwear</span><h3>Cloud Runner</h3><div><b>$115</b><button class="add-btn" data-add="Cloud Runner" data-price="115">Add to cart +</button></div></div>
+        </article>
+        <article class="product-card glass reveal delay-2">
+          <button class="heart" aria-label="Wishlist">♡</button><div class="product-art art-camera">◉</div>
+          <div class="product-meta"><span>Tech</span><h3>Pixel Camera</h3><div><b>$249</b><button class="add-btn" data-add="Pixel Camera" data-price="249">Add to cart +</button></div></div>
+        </article>
+        <article class="product-card glass reveal delay-3">
+          <button class="heart" aria-label="Wishlist">♡</button><div class="product-art art-bag">▱</div>
+          <div class="product-meta"><span>Essentials</span><h3>Mono Travel Bag</h3><div><b>$74</b><button class="add-btn" data-add="Mono Travel Bag" data-price="74">Add to cart +</button></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="promo glass section reveal">
+      <div><span class="eyebrow">LIMITED DROP</span><h2>Minimal form.<br><em>Maximum impact.</em></h2><p>Get 20% off your first order with code <b>GLASS20</b>.</p></div>
+      <a class="btn btn-primary" href="shop.html">Shop the drop ↗</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div><a class="logo" href="index.html"><span>G</span>lassify</a><p>Premium shopping, beautifully transparent.</p></div>
+    <div class="footer-links"><a href="shop.html">Shop</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+    <small>© 2026 Glassify Shop. Demo storefront.</small>
+  </footer>
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+  <script src="cart.js"></script>
+</body>
+</html>
